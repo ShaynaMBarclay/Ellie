@@ -258,18 +258,35 @@
 
 /* Mobile */
 @media (max-width: 600px) {
-  .night-elf-title {
+   .night-elf-title {
     font-size: 1.5rem;
+    text-shadow: 
+      0 0 5px #a7e0ff,
+      0 0 10px #8ab4ff,
+      0 0 15px #4ca0d8;
   }
 
-   .night-elf-screen {
+     .night-elf-screen {
     background-image: url('../assets/nelfphone.jpg'); 
     background-position: center top;
     background-size: cover;
+    min-height: 100vh;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    box-sizing: border-box;
+  }
+
+  .wisp {
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(circle, rgba(180,230,255,0.8) 40%, rgba(150,200,255,0.5) 70%, transparent 100%);
+    filter: blur(4px);
   }
 
    .crawling-cat {
-    bottom: 50px; 
+    bottom: 80px; 
     width: 150px;
   }
 
