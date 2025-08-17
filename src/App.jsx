@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import "./styles/App.css";
 import TarotCard from "./components/TarotCard";
@@ -9,16 +8,18 @@ function App() {
   const [showNightElf, setShowNightElf] = useState(false);
 
   return (
-    <div>
-      {!showNightElf ? (
+    <div className="screen-container">
+      <div className={`screen ${showNightElf ? "fade-out" : "fade-in"}`}>
         <TarotCard
           imageFront={tarotImage}
           quote="Happy Birthday! Love, Grandma 💖"
           onFlipComplete={() => setShowNightElf(true)}
         />
-      ) : (
+      </div>
+
+      <div className={`screen ${showNightElf ? "fade-in" : "fade-out"}`}>
         <NightElfScreen />
-      )}
+      </div>
     </div>
   );
 }

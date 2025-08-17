@@ -191,3 +191,24 @@
     opacity: 0;
   }
 }
+
+.music-button {
+  position: absolute;
+ top: 30px;
+  left: 30px;
+  background-color: rgba(191, 130, 249, 0.8);
+  color: #fff;
+  border: 2px solid #c080ff;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 20;
+}
+
+.music-button:hover {
+  background-color: rgba(191, 130, 249, 1);
+  box-shadow: 0 0 20px #c080ff;
+}

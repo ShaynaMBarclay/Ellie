@@ -1,9 +1,24 @@
+import React, { useState, useRef } from "react";
 import catImage from "../assets/cat.png";
 import topCatImage from "../assets/nelfsaber.png";
 import questIcon from "../assets/questicon.png";
 import leoCat from "../assets/blackcat.png";
+import musicFile from "../assets/music.mp3";
 
 function NightElfScreen() {
+     const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(null);
+
+  const toggleMusic = () => {
+    if (!audioRef.current) return;
+
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
   return (
     <div className="night-elf-screen">
       <h1 className="night-elf-title">
@@ -40,6 +55,14 @@ function NightElfScreen() {
           }}
         />
       ))}
+    
+     {/* Audio element */}
+      <audio ref={audioRef} src={musicFile} loop />
+
+      {/* Music toggle button */}
+      <button className="music-button" onClick={toggleMusic}>
+        {isPlaying ? "Pause Music" : "Play Music"}
+      </button>
     </div>
   );
 }
