@@ -1,0 +1,26 @@
+
+.night-elf-screen {
+  background: url('/assets/night-elf-bg.jpg') no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.crawling-cat {
+  position: absolute;
+  bottom: 10px;
+  left: -100px;
+  width: 80px;
+  animation: crawl 8s linear infinite;
+}
+
+@keyframes crawl {
+  0% { left: -100px; }
+  100% { left: 100vw; }
+}
