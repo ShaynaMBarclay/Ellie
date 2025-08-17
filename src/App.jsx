@@ -12,7 +12,7 @@ function App() {
       <div className={`screen ${showNightElf ? "fade-out" : "fade-in"}`}>
         <TarotCard
           imageFront={tarotImage}
-          quote="Happy Birthday! Love, Grandma 💖"
+          quote="through healing and inspiration to overcome the challenges in life, I will guide you to your purpose and inner self. love grandma 💖"
           onFlipComplete={() => setShowNightElf(true)}
         />
       </div>

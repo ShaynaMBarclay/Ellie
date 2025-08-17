@@ -7,7 +7,7 @@ function TarotCard({ quote, imageFront, onFlipComplete }) {
     setFlipped(true);
     setTimeout(() => {
       onFlipComplete();
-    }, 3500); 
+    }, 4500); 
   };
 
   return (
