@@ -1,2 +1,12 @@
 @import "./TarotCard.css";
 @import "./NightElfScreen.css";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; 
+  background: linear-gradient(135deg, #fff596, #aeeafe); 
+  font-family: "Georgia", serif;
+}
