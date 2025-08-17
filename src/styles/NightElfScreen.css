@@ -29,7 +29,7 @@
 
 .crawling-cat {
   position: absolute;
-  bottom: 30px; 
+  bottom: 60px; 
   left: -200px; 
   width: 200px; 
   animation: crawl 20s linear infinite; 
@@ -268,9 +268,9 @@
     background-size: cover;
   }
 
-  .crawling-cat {
-    width: 100px;
-    bottom: 15px;
+   .crawling-cat {
+    bottom: 50px; 
+    width: 150px;
   }
 
   .top-cat {

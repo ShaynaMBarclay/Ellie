@@ -9,8 +9,6 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden; 
-  background: linear-gradient(135deg, #fff596, #aeeafe); 
-  font-family: "Georgia", serif;
 }
 
 .screen-container {
@@ -34,4 +32,24 @@ html, body {
 .fade-out {
   opacity: 0;
   z-index: 1;
+}
+
+.tarot-card-screen {
+  background-color: #FFD700; /* golden */
+  min-height: 100vh;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  box-sizing: border-box;
+}
+
+.night-elf-screen {
+  background-color: #5b2cae; /* purple */
+  min-height: 100vh;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  box-sizing: border-box;
 }
