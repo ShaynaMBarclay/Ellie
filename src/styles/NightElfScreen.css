@@ -212,3 +212,95 @@
   background-color: rgba(191, 130, 249, 1);
   box-shadow: 0 0 20px #c080ff;
 }
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .night-elf-title {
+    font-size: 2rem;
+  }
+
+  .crawling-cat {
+    width: 150px;
+    bottom: 20px;
+  }
+
+  .top-cat {
+    width: 150px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .quest-wrapper {
+    top: 200px;
+    right: 20px;
+  }
+
+  .chat-bubble {
+    font-size: 1.2rem;
+    padding: 20px;
+    max-width: 180px;
+  }
+
+  .chat-cat {
+    width: 50px;
+  }
+
+  .leaf {
+    width: 50px;
+    height: 50px;
+  }
+
+  .music-button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .night-elf-title {
+    font-size: 1.5rem;
+  }
+
+   .night-elf-screen {
+    background-image: url('../assets/nelfphone.jpg'); 
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .crawling-cat {
+    width: 100px;
+    bottom: 15px;
+  }
+
+  .top-cat {
+    width: 100px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .quest-wrapper {
+    top: 150px;
+    right: 10px;
+  }
+
+  .chat-bubble {
+    font-size: 1rem;
+    padding: 15px;
+    max-width: 140px;
+  }
+
+  .chat-cat {
+    width: 35px;
+  }
+
+  .leaf {
+    width: 35px;
+    height: 35px;
+  }
+
+  .music-button {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}
