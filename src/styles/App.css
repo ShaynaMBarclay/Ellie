@@ -55,3 +55,11 @@ html, body {
   padding-right: env(safe-area-inset-right);
   box-sizing: border-box;
 }
+
+body {
+  cursor: url('../assets/fcursor.png'), auto; 
+}
+
+.quest-wrapper:hover, .music-button:hover, .card-container:hover, .quest-icon:hover {
+  cursor: url('../assets/fpointer.png'), pointer;
+}
